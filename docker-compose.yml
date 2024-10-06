@@ -1,45 +1,57 @@
 version: '3.8'
 
 services:
+  # База данных
   database:
     build:
       context: .
-      dockerfile: Dockerfile.data  # Используем Dockerfile для сборки контейнера базы данных
+      dockerfile: Dockerfile.data  # Dockerfile для сборки базы данных
     container_name: database_container
     volumes:
       - ./src/data/test.db:/app/data/test.db
-      - ./src/data/Img:/app/data/Img 
+      - ./src/data/Img:/app/data/Img
     networks:
       - mynetwork
 
+  # Модель
   model:
     build:
       context: .
-      dockerfile: Dockerfile  # Сборка образа для модели из Dockerfile
+      dockerfile: Dockerfile  # Dockerfile для сборки модели
     container_name: model_container
     ports:
-      - "8000:8000"  # Порт для приложения модели
+      - "8000:8000"  # Порт для модели
     volumes:
-      - ./src:/app/src  # Монтируем исходный код из папки src
+      - ./src:/app/src  # Подключаем код модели
     networks:
       - mynetwork
 
+  # Grafana
   grafana:
     image: grafana/grafana
     container_name: grafana_container
     ports:
-      - "3000:3000"  # Порт для Grafana
+      - "3000:3000"
+    volumes:
+      - ./prometheus_datasource.yml:/etc/grafana/provisioning/datasources/prometheus_datasource.yml  # Подключаем конфигурацию для источника данных
+      - ./grafana.ini:/etc/grafana/grafana.ini  # Подключаем файл конфигурации Grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin  # Имя администратора Grafana
+      - GF_SECURITY_ADMIN_PASSWORD=admin123  # Пароль администратора Grafana
     networks:
       - mynetwork
 
+  # Prometheus
   prometheus:
     image: prom/prometheus
     container_name: prometheus_container
     ports:
-      - "9090:9090"  # Порт для Prometheus
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml  # Подключаем конфигурацию Prometheus
     networks:
       - mynetwork
 
 networks:
   mynetwork:
-    driver: bridge  # Используем сетевой драйвер bridge
+    driver: bridge
