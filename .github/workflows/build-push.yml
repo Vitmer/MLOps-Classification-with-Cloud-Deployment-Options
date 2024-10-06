@@ -22,37 +22,37 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}  # Docker Hub username stored in GitHub secrets
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}  # Docker Hub access token stored in GitHub secrets
 
-      - name: Build and push Docker image for model_container
+      - name: Build and push Docker image for mlops_classification-model
         uses: docker/build-push-action@v2
         with:
           context: .  # Build context set to the root directory
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/model_container:latest  # Tag for the first image
+            ${{ secrets.DOCKER_HUB_USERNAME }}/mlops_classification-model:latest  # Tag for the model image
 
-      - name: Build and push Docker image for database_container
+      - name: Build and push Docker image for mlops_classification-database
         uses: docker/build-push-action@v2
         with:
           context: .  # Build context set to the root directory
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/database_container:latest  # Tag for the second image
+            ${{ secrets.DOCKER_HUB_USERNAME }}/mlops_classification-database:latest  # Tag for the database image
 
-      - name: Build and push Docker image for prometheus_container
+      - name: Build and push Docker image for mlops-prometheus
         uses: docker/build-push-action@v2
         with:
           context: .  # Build context set to the root directory
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/prometheus_container:latest  # Tag for the third image
+            ${{ secrets.DOCKER_HUB_USERNAME }}/mlops-prometheus:latest  # Tag for the Prometheus image
 
-      - name: Build and push Docker image for grafana_container
+      - name: Build and push Docker image for mlops-grafana
         uses: docker/build-push-action@v2
         with:
           context: .  # Build context set to the root directory
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/grafana_container:latest  # Tag for the fourth image
+            ${{ secrets.DOCKER_HUB_USERNAME }}/mlops-grafana:latest  # Tag for the Grafana image
 
       - name: Log out from Docker Hub
         run: docker logout  # Log out from Docker Hub after pushing the images
