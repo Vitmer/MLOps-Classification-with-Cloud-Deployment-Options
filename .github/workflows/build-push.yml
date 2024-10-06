@@ -22,21 +22,21 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}  # Docker Hub username stored in GitHub secrets
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}  # Docker Hub access token stored in GitHub secrets
 
-      - name: Build and push Docker image for mlops_classification-model
+      - name: Build and push Docker image for mlopsclassification-model
         uses: docker/build-push-action@v2
         with:
           context: .  # Build context set to the root directory
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/mlops_classification-model:latest  # Tag for the model image
+            ${{ secrets.DOCKER_HUB_USERNAME }}/mlopsclassification-model:latest  # Tag for the model image
 
-      - name: Build and push Docker image for mlops_classification-database
+      - name: Build and push Docker image for mlopsclassification-database
         uses: docker/build-push-action@v2
         with:
           context: .  # Build context set to the root directory
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/mlops_classification-database:latest  # Tag for the database image
+            ${{ secrets.DOCKER_HUB_USERNAME }}/mlopsclassification-database:latest  # Tag for the database image
 
       - name: Build and push Docker image for mlops-prometheus
         uses: docker/build-push-action@v2
