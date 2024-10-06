@@ -27,8 +27,7 @@ jobs:
         with:
           context: .  # Build context set to the root directory
           push: true
-          tags: |
-            vitmer/mlopsclassification-model:latest  # Tag for the model image
+          tags: vitmer/mlopsclassification-model:latest  # Tag for the model image
       
       - name: Build and push Docker image for mlopsclassification-database
         uses: docker/build-push-action@v2
