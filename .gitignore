@@ -10,3 +10,6 @@ __pycache__/
 .venv/lib/python3.10/site-packages/clang/native/libclang.dylib
 .venv/lib/python3.10/site-packages/tensorflow/compiler/mlir/stablehlo/stablehlo_extension.so
 .venv/lib/python3.10/site-packages/tensorflow/libtensorflow_cc.2.dylib
+git rm --cached .venv/lib/python3.10/site-packages/clang/native/libclang.dylib
+git rm --cached .venv/lib/python3.10/site-packages/tensorflow/compiler/mlir/stablehlo/stablehlo_extension.so
+git rm --cached .venv/lib/python3.10/site-packages/tensorflow/libtensorflow_cc.2.dylib
