@@ -33,7 +33,7 @@ jobs:
         with:
           host: ec2-18-159-134-62.eu-central-1.compute.amazonaws.com  # Public IP or DNS name of your EC2
           username: ec2-user
-          key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}  # Private SSH key for authentication
+          key: ${{ secrets.EC2_SSH_KEY }}  # Private SSH key for authentication
           script: |
             docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/mlopsclassification-model:latest  # Pull latest model image
             docker run -d --name mlopsclassification-model --network="host" -p 8000:8000 ${{ secrets.DOCKER_HUB_USERNAME }}/mlopsclassification-model:latest  # Run model container
