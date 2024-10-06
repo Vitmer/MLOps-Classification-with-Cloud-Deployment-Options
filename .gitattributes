@@ -7,3 +7,4 @@ __pycache__/
 .env
 *.dylib !text !filter !merge !diff
 *.so !text !filter !merge !diff
+.DS_Store
