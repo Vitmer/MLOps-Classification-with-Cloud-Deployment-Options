@@ -3,3 +3,7 @@
 *.so
 .venv/allfiles.txt
 __pycache__/
+.venv/
+.venv/lib/python3.10/site-packages/clang/native/libclang.dylib
+.venv/lib/python3.10/site-packages/tensorflow/compiler/mlir/stablehlo/stablehlo_extension.so
+.venv/lib/python3.10/site-packages/tensorflow/libtensorflow_cc.2.dylib
