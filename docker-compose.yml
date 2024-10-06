@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  database:
+    build:
+      context: .
+      dockerfile: Dockerfile.data  # Используем Dockerfile для сборки контейнера базы данных
+    container_name: database_container
+    volumes:
+      - ./src/data/test.db:/app/data/test.db
+      - ./src/data/Img:/app/data/Img 
+    networks:
+      - mynetwork
+
+  model:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Сборка образа для модели из Dockerfile
+    container_name: model_container
+    ports:
+      - "8000:8000"  # Порт для приложения модели
+    volumes:
+      - ./src:/app/src  # Монтируем исходный код из папки src
+    networks:
+      - mynetwork
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana_container
+    ports:
+      - "3000:3000"  # Порт для Grafana
+    networks:
+      - mynetwork
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus_container
+    ports:
+      - "9090:9090"  # Порт для Prometheus
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge  # Используем сетевой драйвер bridge

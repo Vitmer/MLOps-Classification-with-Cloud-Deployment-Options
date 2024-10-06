@@ -1,0 +1,108 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "description": "Dashboard for monitoring machine learning model",
+  "editable": true,
+  "gnetId": null,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "datasource": "Prometheus",
+      "id": 1,
+      "isNew": true,
+      "title": "Accuracy",
+      "type": "gauge",
+      "targets": [
+        {
+          "expr": "accuracy",
+          "interval": "",
+          "legendFormat": "Accuracy",
+          "refId": "A"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "datasource": "Prometheus",
+      "id": 2,
+      "isNew": true,
+      "title": "Recall",
+      "type": "gauge",
+      "targets": [
+        {
+          "expr": "recall",
+          "interval": "",
+          "legendFormat": "Recall",
+          "refId": "A"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "datasource": "Prometheus",
+      "id": 3,
+      "isNew": true,
+      "title": "Precision",
+      "type": "gauge",
+      "targets": [
+        {
+          "expr": "precision",
+          "interval": "",
+          "legendFormat": "Precision",
+          "refId": "A"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "datasource": "Prometheus",
+      "id": 4,
+      "isNew": true,
+      "title": "F1-Score",
+      "type": "gauge",
+      "targets": [
+        {
+          "expr": "f1_score",
+          "interval": "",
+          "legendFormat": "F1-Score",
+          "refId": "A"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "datasource": "Prometheus",
+      "id": 5,
+      "isNew": true,
+      "title": "Prediction Count",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "prediction_count",
+          "interval": "",
+          "legendFormat": "Prediction Count",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "datasource": "Prometheus",
+      "id": 6,
+      "isNew": true,
+      "title": "Latency",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "latency",
+          "interval": "",
+          "legendFormat": "Latency",
+          "refId": "A"
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 27,
+  "version": 1
+}

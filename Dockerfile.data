@@ -1,0 +1,18 @@
+# Базовый образ для контейнера данных
+FROM python:3.10-slim
+
+# Устанавливаем рабочую директорию внутри контейнера
+WORKDIR /app
+
+# Создаем директорию для данных
+RUN mkdir -p /app/data
+
+# Копируем файл базы данных в контейнер
+COPY ./src/data/test.db /app/data/test.db
+COPY ./src/data/Img /app/data/Img  
+
+# Устанавливаем права доступа для базы данных
+RUN chmod 644 /app/data/test.db
+
+# Команда по умолчанию при старте контейнера
+CMD ["tail", "-f", "/dev/null"]
