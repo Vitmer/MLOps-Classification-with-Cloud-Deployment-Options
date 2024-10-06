@@ -20,10 +20,17 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}  # Docker Hub username from secrets
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}  # Docker Hub access token from secrets
 
+      - name: Set up AWS CLI  # Set up AWS CLI with access keys
+        run: |
+          echo "[default]" > ~/.aws/config
+          echo "region = eu-central-1" >> ~/.aws/config
+          echo "${{ secrets.AWS_ACCESS_KEY_ID }}" | aws configure set aws_access_key_id
+          echo "${{ secrets.AWS_SECRET_ACCESS_KEY }}" | aws configure set aws_secret_access_key
+
       - name: Set up SSH for EC2  # Set up SSH connection to access EC2
         uses: webfactory/ssh-agent@v0.5.3
         with:
-          ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
+          ssh-private-key: ${{ secrets.EC2_SSH_KEY }}  # Make sure this secret is set up correctly
       
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.7  # Connect to EC2 via SSH
