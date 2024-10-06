@@ -1,0 +1,14 @@
+global:
+  scrape_interval: 15s  # Интервал сбора метрик
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['prometheus_container:9090']  # Адрес Prometheus контейнера в сети
+
+  - job_name: 'model'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['model_container:8000']  # Адрес контейнера модели для сбора метрик
