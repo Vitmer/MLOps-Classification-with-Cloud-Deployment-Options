@@ -1,3 +1,6 @@
+.DS_Store
+src/.DS_Store
+src/api/.DS_Store
 .venv/
 *.dylib
 *.so
