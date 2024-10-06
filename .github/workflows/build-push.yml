@@ -34,24 +34,21 @@ jobs:
         with:
           context: .  # Build context set to the root directory
           push: true
-          tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/mlopsclassification-database:latest  # Tag for the database image
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/mlopsclassification-database:latest  # Tag for the database image
 
       - name: Build and push Docker image for mlops-prometheus
         uses: docker/build-push-action@v2
         with:
           context: .  # Build context set to the root directory
           push: true
-          tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/mlops-prometheus:latest  # Tag for the Prometheus image
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/mlops-prometheus:latest  # Tag for the Prometheus image
 
       - name: Build and push Docker image for mlops-grafana
         uses: docker/build-push-action@v2
         with:
           context: .  # Build context set to the root directory
           push: true
-          tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/mlops-grafana:latest  # Tag for the Grafana image
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/mlops-grafana:latest  # Tag for the Grafana image
 
       - name: Log out from Docker Hub
         run: docker logout  # Log out from Docker Hub after pushing the images
