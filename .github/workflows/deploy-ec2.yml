@@ -38,7 +38,7 @@ jobs:
           host: ec2-18-159-134-62.eu-central-1.compute.amazonaws.com  # IP или DNS EC2
           username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
+          script: 
             # Удаление старого контейнера, если он существует
             docker rm -f mlopsclassification-model || true
 
