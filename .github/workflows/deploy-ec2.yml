@@ -39,11 +39,11 @@ jobs:
           username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            # Удаление старого контейнера, если он существует
-            docker rm -f mlopsclassification-model || true
+              # Удаление старого контейнера, если он существует
+              docker rm -f mlopsclassification-model || true
 
-            # Загрузка последнего образа модели из Docker Hub
-            docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/mlopsclassification-model:latest
+              # Загрузка последнего образа модели из Docker Hub
+              docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/mlopsclassification-model:latest
 
-            # Запуск нового контейнера
-            docker run -d --name mlopsclassification-model --network="host" -p 8000:8000 ${{ secrets.DOCKER_HUB_USERNAME }}/mlopsclassification-model:latest
+              # Запуск нового контейнера
+              docker run -d --name mlopsclassification-model --network="host" -p 8000:8000 ${{ secrets.DOCKER_HUB_USERNAME }}/mlopsclassification-model:latest
