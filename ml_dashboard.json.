@@ -2,107 +2,114 @@
   "annotations": {
     "list": []
   },
-  "description": "Dashboard for monitoring machine learning model",
-  "editable": true,
-  "gnetId": null,
-  "id": null,
-  "links": [],
   "panels": [
     {
       "datasource": "Prometheus",
       "id": 1,
-      "isNew": true,
-      "title": "Accuracy",
-      "type": "gauge",
+      "title": "CPU Usage",
+      "type": "graph",
       "targets": [
         {
-          "expr": "accuracy",
-          "interval": "",
-          "legendFormat": "Accuracy",
+          "expr": "sum(rate(node_cpu_seconds_total[5m])) by (mode)",
+          "legendFormat": "{{mode}}",
           "refId": "A"
         }
       ],
-      "valueName": "current"
+      "lines": true,
+      "fill": 1,
+      "linewidth": 2,
+      "yaxes": [
+        {
+          "format": "percent",
+          "label": "CPU Usage",
+          "min": 0,
+          "max": 1
+        },
+        {
+          "format": "short"
+        }
+      ]
     },
     {
       "datasource": "Prometheus",
       "id": 2,
-      "isNew": true,
-      "title": "Recall",
+      "title": "Memory Usage",
       "type": "gauge",
       "targets": [
         {
-          "expr": "recall",
-          "interval": "",
-          "legendFormat": "Recall",
+          "expr": "100 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes * 100)",
           "refId": "A"
         }
       ],
-      "valueName": "current"
+      "max": 100,
+      "min": 0
     },
     {
       "datasource": "Prometheus",
       "id": 3,
-      "isNew": true,
-      "title": "Precision",
+      "title": "Disk Usage",
       "type": "gauge",
       "targets": [
         {
-          "expr": "precision",
-          "interval": "",
-          "legendFormat": "Precision",
+          "expr": "(node_filesystem_size_bytes{mountpoint=\"/\"} - node_filesystem_free_bytes{mountpoint=\"/\"}) / node_filesystem_size_bytes{mountpoint=\"/\"} * 100",
           "refId": "A"
         }
       ],
-      "valueName": "current"
+      "max": 100,
+      "min": 0
     },
     {
       "datasource": "Prometheus",
       "id": 4,
-      "isNew": true,
-      "title": "F1-Score",
-      "type": "gauge",
+      "title": "Network Traffic",
+      "type": "graph",
       "targets": [
         {
-          "expr": "f1_score",
-          "interval": "",
-          "legendFormat": "F1-Score",
+          "expr": "sum(rate(node_network_receive_bytes_total[5m])) by (device)",
+          "legendFormat": "Received {{device}}",
           "refId": "A"
+        },
+        {
+          "expr": "sum(rate(node_network_transmit_bytes_total[5m])) by (device)",
+          "legendFormat": "Transmitted {{device}}",
+          "refId": "B"
         }
       ],
-      "valueName": "current"
+      "lines": true,
+      "fill": 1,
+      "linewidth": 2
     },
     {
       "datasource": "Prometheus",
       "id": 5,
-      "isNew": true,
-      "title": "Prediction Count",
-      "type": "timeseries",
+      "title": "Load Average",
+      "type": "stat",
       "targets": [
         {
-          "expr": "prediction_count",
-          "interval": "",
-          "legendFormat": "Prediction Count",
+          "expr": "node_load1",
           "refId": "A"
         }
-      ]
+      ],
+      "valueFontSize": "50%",
+      "reduce": "avg"
     },
     {
       "datasource": "Prometheus",
       "id": 6,
-      "isNew": true,
-      "title": "Latency",
-      "type": "timeseries",
+      "title": "Temperature",
+      "type": "gauge",
       "targets": [
         {
-          "expr": "latency",
-          "interval": "",
-          "legendFormat": "Latency",
+          "expr": "node_hwmon_temp_celsius{sensor=\"temp1\"}",
           "refId": "A"
         }
-      ]
+      ],
+      "max": 100,
+      "min": 0
     }
   ],
-  "schemaVersion": 27,
-  "version": 1
+  "schemaVersion": 26,
+  "version": 1,
+  "title": "Node Exporter Dashboard",
+  "uid": "node-exporter-dashboard"
 }
