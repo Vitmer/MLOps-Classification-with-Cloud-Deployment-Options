@@ -16,3 +16,4 @@ RUN chmod 644 /app/data/test.db
 
 # Команда по умолчанию при старте контейнера
 CMD ["tail", "-f", "/dev/null"]
+    
