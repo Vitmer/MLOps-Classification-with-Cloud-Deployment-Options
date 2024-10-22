@@ -9,8 +9,9 @@ import os
 import numpy as np
 from sqlalchemy.orm import Session
 from uuid import uuid4
-import requests  # Импортируем библиотеку для HTTP-запросов
+import requests  
 
+from src.api.retrain_model import retrain_model  # Import the retrain_model function
 from src.api.util_model import predict_classification, train_model_on_new_data, evaluate_model_on_untrained_data
 from src.api.util_auth import create_access_token, verify_password, get_password_hash, verify_access_token, admin_required
 from src.api.database import create_user, get_user, add_product, SessionLocal, User, create_tables, delete_user, log_event, get_all_logs, is_database_available
@@ -166,15 +167,18 @@ async def evaluate_model_endpoint(
 
 # Endpoint to train the model on new data
 @app.get("/train", operation_id="train_model")
-@admin_required()
 async def train_model_endpoint(
-    request: Request,
-    db: Session = Depends(get_db),
-    token: str = Depends(oauth2_scheme)
+    token: str = Depends(oauth2_scheme)  # Проверка токена через зависимость oauth2_scheme
 ):
+    # Проверка валидности токена
+    user_info = verify_access_token(token)
+    if not user_info:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token or user not authenticated")
+    
     try:
-        f1, report = train_model_on_new_data(model, vectorizer, db)
-        return {"f1_score": f1, "classification_report": report}
+        # Запуск модуля RetrainModule (retrain_model функция)
+        retrain_model()  # Call the retrain_model function from the retrain_model.py file
+        return {"message": "Model retraining started and completed successfully."}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Training failed: {str(e)}")
 
@@ -214,4 +218,3 @@ async def delete_user_by_admin(
     else:
         raise HTTPException(status_code=404, detail="User not found")
     
-# 222222

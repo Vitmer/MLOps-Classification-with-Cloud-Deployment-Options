@@ -1,0 +1,143 @@
+2024-10-22 18:04:48,738 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 18:04:48,738 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 18:04:48,738 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 18:04:48,760 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 18:05:52,601 - DEBUG - Calling on_field_start with no data
+2024-10-22 18:05:52,601 - DEBUG - Calling on_field_name with data[0:10]
+2024-10-22 18:05:52,602 - DEBUG - Calling on_field_data with data[11:19]
+2024-10-22 18:05:52,602 - DEBUG - Calling on_field_end with no data
+2024-10-22 18:05:52,602 - DEBUG - Calling on_field_start with no data
+2024-10-22 18:05:52,602 - DEBUG - Calling on_field_name with data[20:28]
+2024-10-22 18:05:52,602 - DEBUG - Calling on_field_data with data[29:34]
+2024-10-22 18:05:52,602 - DEBUG - Calling on_field_end with no data
+2024-10-22 18:05:52,602 - DEBUG - Calling on_field_start with no data
+2024-10-22 18:05:52,602 - DEBUG - Calling on_field_name with data[35:43]
+2024-10-22 18:05:52,602 - DEBUG - Calling on_field_data with data[44:49]
+2024-10-22 18:05:52,602 - DEBUG - Calling on_field_end with no data
+2024-10-22 18:05:52,602 - DEBUG - Calling on_end with no data
+2024-10-22 18:05:52,613 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/vitmer/Documents/Test_mlops_class/mlopsclassification/.venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-10-22 18:05:52,614 - DEBUG - detected 'bcrypt' backend, version '<unknown>'
+2024-10-22 18:05:52,614 - DEBUG - 'bcrypt' backend lacks $2$ support, enabling workaround
+2024-10-22 18:06:55,743 - INFO - Loading balanced data...
+2024-10-22 18:06:58,823 - INFO - Splitting 10% of the data for the test set...
+2024-10-22 18:07:04,440 - DEBUG - Memory freed using garbage collector.
+2024-10-22 18:07:04,440 - INFO - Splitting 80% of the remaining training data into train and validation sets...
+2024-10-22 18:07:08,798 - DEBUG - Training set size: 179720, Validation set size: 44931
+2024-10-22 18:07:08,798 - INFO - Building model...
+2024-10-22 18:07:08,802 - INFO - Building model architecture...
+2024-10-22 18:07:08,875 - INFO - Model built successfully.
+2024-10-22 18:07:08,942 - DEBUG - Memory freed using garbage collector.
+2024-10-22 18:07:08,942 - INFO - Starting model training on balanced data...
+2024-10-22 18:08:00,231 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 18:08:00,231 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 18:08:00,231 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 18:08:00,257 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_start with no data
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_name with data[0:10]
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_data with data[11:19]
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_end with no data
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_start with no data
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_name with data[20:28]
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_data with data[29:34]
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_end with no data
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_start with no data
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_name with data[35:43]
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_data with data[44:49]
+2024-10-22 18:08:40,586 - DEBUG - Calling on_field_end with no data
+2024-10-22 18:08:40,586 - DEBUG - Calling on_end with no data
+2024-10-22 18:08:40,595 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/vitmer/Documents/Test_mlops_class/mlopsclassification/.venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-10-22 18:08:40,597 - DEBUG - detected 'bcrypt' backend, version '<unknown>'
+2024-10-22 18:08:40,597 - DEBUG - 'bcrypt' backend lacks $2$ support, enabling workaround
+2024-10-22 19:09:34,239 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 19:09:34,239 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 19:09:34,239 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 19:09:34,255 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 19:13:02,663 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 19:13:02,663 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 19:13:02,663 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 19:13:02,678 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_name with data[0:10]
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_data with data[11:19]
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_name with data[20:28]
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_data with data[29:34]
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_name with data[35:43]
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_data with data[44:49]
+2024-10-22 19:13:36,559 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:13:36,559 - DEBUG - Calling on_end with no data
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_name with data[0:10]
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_data with data[11:19]
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_name with data[20:28]
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_data with data[29:34]
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_name with data[35:43]
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_data with data[44:49]
+2024-10-22 19:13:53,836 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:13:53,837 - DEBUG - Calling on_end with no data
+2024-10-22 19:14:30,782 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 19:14:30,782 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 19:14:30,782 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 19:14:30,796 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 19:15:09,097 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 19:15:09,097 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 19:15:09,097 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 19:15:09,112 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_name with data[0:10]
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_data with data[11:19]
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_name with data[20:28]
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_data with data[29:34]
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_name with data[35:43]
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_data with data[44:49]
+2024-10-22 19:16:00,022 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:16:00,022 - DEBUG - Calling on_end with no data
+2024-10-22 19:16:00,032 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/vitmer/Documents/Test_mlops_class/mlopsclassification/.venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-10-22 19:16:00,033 - DEBUG - detected 'bcrypt' backend, version '<unknown>'
+2024-10-22 19:16:00,033 - DEBUG - 'bcrypt' backend lacks $2$ support, enabling workaround
+2024-10-22 19:19:40,356 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 19:19:40,356 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 19:19:40,356 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 19:19:40,372 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 19:19:50,525 - INFO - Loading balanced data...
+2024-10-22 19:19:53,485 - INFO - Splitting 10% of the data for the test set...
+2024-10-22 19:19:58,849 - DEBUG - Memory freed using garbage collector.
+2024-10-22 19:19:58,849 - INFO - Splitting 80% of the remaining training data into train and validation sets...
+2024-10-22 19:20:03,026 - DEBUG - Training set size: 179720, Validation set size: 44931
+2024-10-22 19:20:03,026 - INFO - Building model...
+2024-10-22 19:20:03,030 - INFO - Building model architecture...
+2024-10-22 19:20:03,111 - INFO - Model built successfully.
+2024-10-22 19:20:03,206 - DEBUG - Memory freed using garbage collector.
+2024-10-22 19:20:03,206 - INFO - Starting model training on balanced data...
+2024-10-22 19:37:47,143 - INFO - Saving model...
+2024-10-22 19:37:47,189 - INFO - Model saved successfully.
+2024-10-22 19:37:47,189 - INFO - Evaluating model on test data...
+2024-10-22 19:37:49,027 - INFO - F1-score on test data: 0.9235069156601762
+F1-score on test data: 0.9235069156601762
+2024-10-22 19:37:49,028 - INFO - F1-score on test set: 0.9235069156601762
