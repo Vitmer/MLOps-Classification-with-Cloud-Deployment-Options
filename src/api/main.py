@@ -9,7 +9,8 @@ import os
 import numpy as np
 from sqlalchemy.orm import Session
 from uuid import uuid4
-import requests  
+import requests 
+from sklearn.metrics import f1_score, classification_report
 
 from src.api.retrain_model import retrain_model  # Import the retrain_model function
 from src.api.util_model import predict_classification, train_model_on_new_data, evaluate_model_on_untrained_data
@@ -153,14 +154,30 @@ async def add_product_api(
     
 # Endpoint to evaluate the model on untrained data
 @app.get("/evaluate", operation_id="evaluate_model")
-@admin_required()
+@admin_required()  # Check if the user is an admin
 async def evaluate_model_endpoint(
     request: Request,
     session: Session = Depends(get_db),
     token: str = Depends(oauth2_scheme)
 ):
     try:
-        f1, report = evaluate_model_on_untrained_data(model, vectorizer, session)
+        # Load test data for both inputs (e.g., text and images)
+        X_test_text = np.load('src/data/X_train_tfidf_balanced.npy')
+        X_test_images = np.load('src/data/train_image_features_balanced.npy')  # Load image data
+
+        # Load true labels (Y_test)
+        y_true = np.load('src/data/Y_train_balanced.npy')  # Load the true labels for test data
+
+        # Predict using both inputs
+        y_pred = model.predict([X_test_text, X_test_images])
+        y_pred_classes = np.argmax(y_pred, axis=1)  # Convert predicted probabilities to class labels
+
+        # Calculate F1 score
+        f1 = f1_score(y_true, y_pred_classes, average='weighted')
+
+        # Generate classification report
+        report = classification_report(y_true, y_pred_classes, output_dict=True)
+
         return {"f1_score": f1, "classification_report": report}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Evaluation failed: {str(e)}")
@@ -217,4 +234,3 @@ async def delete_user_by_admin(
         return {"message": f"User '{username}' deleted successfully."}
     else:
         raise HTTPException(status_code=404, detail="User not found")
-    
