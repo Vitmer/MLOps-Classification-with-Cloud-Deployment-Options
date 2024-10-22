@@ -12,9 +12,8 @@ __pycache__/
 .venv/lib/python3.10/site-packages/tensorflow/libtensorflow_cc.2.dylib
 git rm --cached .venv/lib/python3.10/site-packages/clang/native/libclang.dylib
 git rm --cached .venv/lib/python3.10/site-packages/tensorflow/compiler/mlir/stablehlo/stablehlo_extension.so
-<<<<<<< HEAD
 git rm --cached .venv/lib/python3.10/site-packages/tensorflow/libtensorflow_cc.2.dylib
 *.pyc
-=======
-git rm --cached .venv/lib/python3.10/site-packages/tensorflow/libtensorflow_cc.2.dylib
->>>>>>> d73ea7e677d391caf2ffc5c5dcb042b91d6e7ad4
+src/data/X_train_tfidf_balanced.npy
+src/data/Y_train_balanced.npy
+src/data/train_image_features_balanced.npy
