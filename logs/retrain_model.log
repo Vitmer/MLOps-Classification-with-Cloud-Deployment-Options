@@ -141,3 +141,476 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2024-10-22 19:37:49,027 - INFO - F1-score on test data: 0.9235069156601762
 F1-score on test data: 0.9235069156601762
 2024-10-22 19:37:49,028 - INFO - F1-score on test set: 0.9235069156601762
+2024-10-22 19:58:37,984 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 19:58:37,984 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 19:58:37,984 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 19:58:38,011 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 19:58:53,966 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:58:53,967 - DEBUG - Calling on_field_name with data[0:10]
+2024-10-22 19:58:53,967 - DEBUG - Calling on_field_data with data[11:19]
+2024-10-22 19:58:53,967 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:58:53,967 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:58:53,967 - DEBUG - Calling on_field_name with data[20:28]
+2024-10-22 19:58:53,967 - DEBUG - Calling on_field_data with data[29:34]
+2024-10-22 19:58:53,967 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:58:53,967 - DEBUG - Calling on_field_start with no data
+2024-10-22 19:58:53,967 - DEBUG - Calling on_field_name with data[35:43]
+2024-10-22 19:58:53,967 - DEBUG - Calling on_field_data with data[44:49]
+2024-10-22 19:58:53,967 - DEBUG - Calling on_field_end with no data
+2024-10-22 19:58:53,967 - DEBUG - Calling on_end with no data
+2024-10-22 19:58:53,980 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/vitmer/Documents/Test_mlops_class/mlopsclassification/.venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-10-22 19:58:53,981 - DEBUG - detected 'bcrypt' backend, version '<unknown>'
+2024-10-22 19:58:53,981 - DEBUG - 'bcrypt' backend lacks $2$ support, enabling workaround
+2024-10-22 20:07:46,683 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 20:07:46,683 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 20:07:46,683 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 20:07:46,710 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_start with no data
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_name with data[0:10]
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_data with data[11:19]
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_end with no data
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_start with no data
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_name with data[20:28]
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_data with data[29:34]
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_end with no data
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_start with no data
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_name with data[35:43]
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_data with data[44:49]
+2024-10-22 20:07:55,707 - DEBUG - Calling on_field_end with no data
+2024-10-22 20:07:55,707 - DEBUG - Calling on_end with no data
+2024-10-22 20:07:55,718 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/vitmer/Documents/Test_mlops_class/mlopsclassification/.venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-10-22 20:07:55,719 - DEBUG - detected 'bcrypt' backend, version '<unknown>'
+2024-10-22 20:07:55,719 - DEBUG - 'bcrypt' backend lacks $2$ support, enabling workaround
+2024-10-22 20:15:32,993 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 20:15:32,993 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 20:15:32,993 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 20:15:33,022 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 20:15:46,186 - DEBUG - Calling on_field_start with no data
+2024-10-22 20:15:46,187 - DEBUG - Calling on_field_name with data[0:10]
+2024-10-22 20:15:46,187 - DEBUG - Calling on_field_data with data[11:19]
+2024-10-22 20:15:46,187 - DEBUG - Calling on_field_end with no data
+2024-10-22 20:15:46,187 - DEBUG - Calling on_field_start with no data
+2024-10-22 20:15:46,187 - DEBUG - Calling on_field_name with data[20:28]
+2024-10-22 20:15:46,187 - DEBUG - Calling on_field_data with data[29:34]
+2024-10-22 20:15:46,187 - DEBUG - Calling on_field_end with no data
+2024-10-22 20:15:46,187 - DEBUG - Calling on_field_start with no data
+2024-10-22 20:15:46,187 - DEBUG - Calling on_field_name with data[35:43]
+2024-10-22 20:15:46,187 - DEBUG - Calling on_field_data with data[44:49]
+2024-10-22 20:15:46,187 - DEBUG - Calling on_field_end with no data
+2024-10-22 20:15:46,187 - DEBUG - Calling on_end with no data
+2024-10-22 20:15:46,198 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/vitmer/Documents/Test_mlops_class/mlopsclassification/.venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-10-22 20:15:46,199 - DEBUG - detected 'bcrypt' backend, version '<unknown>'
+2024-10-22 20:15:46,199 - DEBUG - 'bcrypt' backend lacks $2$ support, enabling workaround
+2024-10-22 20:16:54,895 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 20:16:54,895 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 20:16:54,895 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 20:16:54,922 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 20:18:58,593 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 20:18:58,593 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 20:18:58,593 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 20:18:58,619 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 20:20:30,968 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-22 20:20:30,969 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-22 20:20:30,969 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-22 20:20:30,998 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-22 20:21:50,311 - DEBUG - Starting new HTTP connection (1): localhost:9090
+2024-10-23 12:02:15,709 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-23 12:02:15,709 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-23 12:02:15,709 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-23 12:02:15,739 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-23 12:02:16,014 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:02:16,015 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:02:16,015 - DEBUG - Calling on_field_name with data[0:8]
+2024-10-23 12:02:16,015 - DEBUG - Calling on_field_data with data[9:18]
+2024-10-23 12:02:16,015 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:02:16,015 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:02:16,015 - DEBUG - Calling on_field_name with data[19:27]
+2024-10-23 12:02:16,015 - DEBUG - Calling on_field_data with data[28:41]
+2024-10-23 12:02:16,015 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:02:16,015 - DEBUG - Calling on_end with no data
+2024-10-23 12:02:16,023 - INFO - HTTP Request: POST http://testserver/login "HTTP/1.1 400 Bad Request"
+2024-10-23 12:02:16,023 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:02:16,024 - INFO - HTTP Request: POST http://testserver/retrain "HTTP/1.1 404 Not Found"
+2024-10-23 12:02:16,024 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:02:16,025 - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 404 Not Found"
+2024-10-23 12:02:16,026 - INFO - Building model architecture...
+2024-10-23 12:02:16,112 - INFO - Model built successfully.
+2024-10-23 12:02:16,467 - DEBUG - Creating converter from 3 to 5
+2024-10-23 12:11:57,744 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-23 12:11:57,744 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-23 12:11:57,744 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-23 12:11:57,759 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-23 12:11:58,000 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:11:58,003 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:11:58,004 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:11:58,004 - INFO - Testing login route.
+2024-10-23 12:11:58,004 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:11:58,004 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:11:58,004 - DEBUG - Calling on_field_name with data[0:8]
+2024-10-23 12:11:58,004 - DEBUG - Calling on_field_data with data[9:18]
+2024-10-23 12:11:58,004 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:11:58,004 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:11:58,004 - DEBUG - Calling on_field_name with data[19:27]
+2024-10-23 12:11:58,004 - DEBUG - Calling on_field_data with data[28:41]
+2024-10-23 12:11:58,004 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:11:58,004 - DEBUG - Calling on_end with no data
+2024-10-23 12:11:58,011 - INFO - HTTP Request: POST http://testserver/login "HTTP/1.1 400 Bad Request"
+2024-10-23 12:11:58,011 - DEBUG - Response JSON: {'detail': 'Invalid credentials'}
+2024-10-23 12:11:58,011 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:11:58,011 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:11:58,012 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:11:58,012 - INFO - Testing retrain model route.
+2024-10-23 12:11:58,012 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:11:58,013 - INFO - HTTP Request: POST http://testserver/retrain "HTTP/1.1 404 Not Found"
+2024-10-23 12:11:58,013 - DEBUG - Response JSON: {'detail': 'Not Found'}
+2024-10-23 12:11:58,013 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:11:58,013 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:11:58,014 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:11:58,014 - INFO - Testing startup event.
+2024-10-23 12:11:58,015 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:11:58,015 - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 404 Not Found"
+2024-10-23 12:11:58,015 - DEBUG - Response status code: 404
+2024-10-23 12:11:58,015 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:11:58,016 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:11:58,016 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:11:58,016 - INFO - Testing image upload route.
+2024-10-23 12:11:58,099 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:11:58,100 - INFO - HTTP Request: POST http://testserver/upload_image "HTTP/1.1 404 Not Found"
+2024-10-23 12:11:58,100 - DEBUG - Response JSON: {'detail': 'Not Found'}
+2024-10-23 12:11:58,101 - INFO - Testing build_model function.
+2024-10-23 12:11:58,101 - INFO - Building model architecture...
+2024-10-23 12:11:58,124 - INFO - Model built successfully.
+2024-10-23 12:11:58,125 - INFO - Testing free_memory function.
+2024-10-23 12:11:58,125 - INFO - Testing create_access_token function.
+2024-10-23 12:11:58,125 - DEBUG - Access token creation test passed.
+2024-10-23 12:11:58,125 - INFO - Testing get_password_hash function.
+2024-10-23 12:11:58,125 - DEBUG - Password hashing test passed.
+2024-10-23 12:11:58,126 - INFO - Testing verify_access_token function.
+2024-10-23 12:11:58,126 - DEBUG - Access token verification test passed.
+2024-10-23 12:11:58,126 - INFO - Testing verify_password function.
+2024-10-23 12:11:58,126 - DEBUG - Password verification test passed.
+2024-10-23 12:11:58,126 - INFO - Testing evaluate_model_on_untrained_data function.
+2024-10-23 12:11:58,126 - INFO - Testing predict_classification function.
+2024-10-23 12:11:58,126 - INFO - Testing train_model_on_new_data function.
+2024-10-23 12:26:45,050 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-23 12:26:45,050 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-23 12:26:45,050 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-23 12:26:45,064 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-23 12:26:45,305 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:26:45,307 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:26:45,308 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:26:45,308 - INFO - Testing login route.
+2024-10-23 12:26:45,308 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:26:45,309 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:26:45,309 - DEBUG - Calling on_field_name with data[0:8]
+2024-10-23 12:26:45,309 - DEBUG - Calling on_field_data with data[9:18]
+2024-10-23 12:26:45,309 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:26:45,309 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:26:45,309 - DEBUG - Calling on_field_name with data[19:27]
+2024-10-23 12:26:45,309 - DEBUG - Calling on_field_data with data[28:41]
+2024-10-23 12:26:45,309 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:26:45,309 - DEBUG - Calling on_end with no data
+2024-10-23 12:26:45,314 - INFO - HTTP Request: POST http://testserver/login "HTTP/1.1 400 Bad Request"
+2024-10-23 12:26:45,314 - DEBUG - Response JSON: {'detail': 'Invalid credentials'}
+2024-10-23 12:26:45,315 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:26:45,315 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:26:45,316 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:26:45,316 - INFO - Testing retrain model route.
+2024-10-23 12:26:45,316 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:26:45,317 - INFO - HTTP Request: POST http://testserver/retrain "HTTP/1.1 404 Not Found"
+2024-10-23 12:26:45,317 - DEBUG - Response JSON: {'detail': 'Not Found'}
+2024-10-23 12:26:45,317 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:26:45,318 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:26:45,318 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:26:45,318 - INFO - Testing startup event.
+2024-10-23 12:26:45,319 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:26:45,319 - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 404 Not Found"
+2024-10-23 12:26:45,319 - DEBUG - Response status code: 404
+2024-10-23 12:26:45,319 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:26:45,319 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:26:45,320 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:26:45,320 - INFO - Testing image upload route.
+2024-10-23 12:26:45,389 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:26:45,390 - INFO - HTTP Request: POST http://testserver/upload_image "HTTP/1.1 404 Not Found"
+2024-10-23 12:26:45,390 - DEBUG - Response JSON: {'detail': 'Not Found'}
+2024-10-23 12:26:45,390 - INFO - Testing build_model function.
+2024-10-23 12:26:45,390 - INFO - Building model architecture...
+2024-10-23 12:26:45,413 - INFO - Model built successfully.
+2024-10-23 12:26:45,414 - INFO - Testing free_memory function.
+2024-10-23 12:26:45,414 - INFO - Testing create_access_token function.
+2024-10-23 12:26:45,415 - DEBUG - Access token creation test passed.
+2024-10-23 12:26:45,415 - INFO - Testing get_password_hash function.
+2024-10-23 12:26:45,415 - DEBUG - Password hashing test passed.
+2024-10-23 12:26:45,415 - INFO - Testing verify_access_token function.
+2024-10-23 12:26:45,415 - DEBUG - Access token verification test passed.
+2024-10-23 12:26:45,415 - INFO - Testing verify_password function.
+2024-10-23 12:26:45,415 - DEBUG - Password verification test passed.
+2024-10-23 12:26:45,415 - INFO - Testing evaluate_model_on_untrained_data function.
+2024-10-23 12:26:45,416 - INFO - Testing predict_classification function.
+2024-10-23 12:26:45,417 - INFO - Testing train_model_on_new_data function.
+2024-10-23 12:36:45,911 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-23 12:36:45,911 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-23 12:36:45,911 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-23 12:36:45,925 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-23 12:36:46,170 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:36:46,172 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:36:46,173 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:36:46,173 - INFO - Testing login route.
+2024-10-23 12:36:46,174 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:36:46,174 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:36:46,174 - DEBUG - Calling on_field_name with data[0:8]
+2024-10-23 12:36:46,174 - DEBUG - Calling on_field_data with data[9:18]
+2024-10-23 12:36:46,174 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:36:46,174 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:36:46,174 - DEBUG - Calling on_field_name with data[19:27]
+2024-10-23 12:36:46,174 - DEBUG - Calling on_field_data with data[28:41]
+2024-10-23 12:36:46,174 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:36:46,174 - DEBUG - Calling on_end with no data
+2024-10-23 12:36:46,180 - INFO - HTTP Request: POST http://testserver/login "HTTP/1.1 400 Bad Request"
+2024-10-23 12:36:46,180 - DEBUG - Response JSON: {'detail': 'Invalid credentials'}
+2024-10-23 12:36:46,180 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:36:46,181 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:36:46,181 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:36:46,181 - INFO - Testing retrain model route.
+2024-10-23 12:36:46,182 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:36:46,183 - INFO - HTTP Request: POST http://testserver/retrain "HTTP/1.1 404 Not Found"
+2024-10-23 12:36:46,183 - DEBUG - Response JSON: {'detail': 'Not Found'}
+2024-10-23 12:36:46,183 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:36:46,183 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:36:46,184 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:36:46,184 - INFO - Testing startup event.
+2024-10-23 12:36:46,184 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:36:46,185 - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 404 Not Found"
+2024-10-23 12:36:46,185 - DEBUG - Response status code: 404
+2024-10-23 12:36:46,185 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:36:46,185 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:36:46,186 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:36:46,186 - INFO - Testing image upload route.
+2024-10-23 12:36:46,255 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:36:46,255 - INFO - HTTP Request: POST http://testserver/upload_image "HTTP/1.1 404 Not Found"
+2024-10-23 12:36:46,255 - DEBUG - Response JSON: {'detail': 'Not Found'}
+2024-10-23 12:36:46,256 - INFO - Testing build_model function.
+2024-10-23 12:36:46,256 - INFO - Building model architecture...
+2024-10-23 12:36:46,279 - INFO - Model built successfully.
+2024-10-23 12:36:46,279 - DEBUG - Model compiled with expected parameters.
+2024-10-23 12:36:46,279 - INFO - Testing free_memory function.
+2024-10-23 12:36:46,280 - INFO - Testing create_access_token function.
+2024-10-23 12:36:46,280 - DEBUG - Access token creation test passed.
+2024-10-23 12:36:46,280 - INFO - Testing get_password_hash function.
+2024-10-23 12:36:46,280 - DEBUG - Password hashing test passed.
+2024-10-23 12:36:46,280 - INFO - Testing verify_access_token function.
+2024-10-23 12:36:46,280 - DEBUG - Access token verification test passed.
+2024-10-23 12:36:46,280 - INFO - Testing verify_password function.
+2024-10-23 12:36:46,280 - DEBUG - Password verification test passed.
+2024-10-23 12:36:46,280 - INFO - Testing evaluate_model_on_untrained_data function.
+2024-10-23 12:36:46,281 - INFO - Testing predict_classification function.
+2024-10-23 12:36:46,282 - INFO - Testing train_model_on_new_data function.
+2024-10-23 12:39:37,440 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-23 12:39:37,440 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-23 12:39:37,440 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-23 12:39:37,454 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-23 12:39:37,694 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:39:37,696 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:39:37,697 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:39:37,697 - INFO - Testing login route.
+2024-10-23 12:39:37,697 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:39:37,698 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:39:37,698 - DEBUG - Calling on_field_name with data[0:8]
+2024-10-23 12:39:37,698 - DEBUG - Calling on_field_data with data[9:18]
+2024-10-23 12:39:37,698 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:39:37,698 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:39:37,698 - DEBUG - Calling on_field_name with data[19:27]
+2024-10-23 12:39:37,698 - DEBUG - Calling on_field_data with data[28:41]
+2024-10-23 12:39:37,698 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:39:37,698 - DEBUG - Calling on_end with no data
+2024-10-23 12:39:37,703 - INFO - HTTP Request: POST http://testserver/login "HTTP/1.1 400 Bad Request"
+2024-10-23 12:39:37,703 - DEBUG - Response JSON: {'detail': 'Invalid credentials'}
+2024-10-23 12:39:37,704 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:39:37,704 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:39:37,705 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:39:37,705 - INFO - Testing retrain model route.
+2024-10-23 12:39:37,705 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:39:37,706 - INFO - HTTP Request: POST http://testserver/retrain "HTTP/1.1 404 Not Found"
+2024-10-23 12:39:37,706 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:39:37,706 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:39:37,707 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:39:37,707 - INFO - Testing image upload route.
+2024-10-23 12:39:37,776 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:39:37,777 - INFO - HTTP Request: POST http://testserver/upload_image "HTTP/1.1 404 Not Found"
+2024-10-23 12:39:37,777 - INFO - Testing build_model function.
+2024-10-23 12:39:37,777 - INFO - Building model architecture...
+2024-10-23 12:39:37,798 - INFO - Model built successfully.
+2024-10-23 12:39:37,798 - DEBUG - Model compiled with expected parameters.
+2024-10-23 12:39:37,799 - INFO - Testing free_memory function.
+2024-10-23 12:39:37,799 - INFO - Testing create_access_token function.
+2024-10-23 12:39:37,799 - DEBUG - Access token creation test passed.
+2024-10-23 12:39:37,799 - INFO - Testing get_password_hash function.
+2024-10-23 12:39:37,799 - DEBUG - Password hashing test passed.
+2024-10-23 12:39:37,799 - INFO - Testing verify_access_token function.
+2024-10-23 12:39:37,799 - DEBUG - Access token verification test passed.
+2024-10-23 12:39:37,800 - INFO - Testing verify_password function.
+2024-10-23 12:39:37,800 - DEBUG - Password verification test passed.
+2024-10-23 12:39:37,800 - INFO - Testing evaluate_model_on_untrained_data function.
+2024-10-23 12:39:37,801 - INFO - Testing predict_classification function.
+2024-10-23 12:39:37,804 - INFO - Testing train_model_on_new_data function.
+2024-10-23 12:41:29,542 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-23 12:41:29,542 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-23 12:41:29,542 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-23 12:41:29,557 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-23 12:41:29,802 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:41:29,804 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:41:29,805 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:41:29,805 - INFO - Testing login route.
+2024-10-23 12:41:29,805 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:41:29,806 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:41:29,806 - DEBUG - Calling on_field_name with data[0:8]
+2024-10-23 12:41:29,806 - DEBUG - Calling on_field_data with data[9:18]
+2024-10-23 12:41:29,806 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:41:29,806 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:41:29,806 - DEBUG - Calling on_field_name with data[19:27]
+2024-10-23 12:41:29,806 - DEBUG - Calling on_field_data with data[28:41]
+2024-10-23 12:41:29,806 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:41:29,806 - DEBUG - Calling on_end with no data
+2024-10-23 12:41:29,812 - INFO - HTTP Request: POST http://testserver/login "HTTP/1.1 400 Bad Request"
+2024-10-23 12:41:29,812 - DEBUG - Response JSON: {'detail': 'Invalid credentials'}
+2024-10-23 12:41:29,812 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:41:29,812 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:41:29,813 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:41:29,813 - INFO - Testing retrain model route.
+2024-10-23 12:41:29,813 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:41:29,814 - INFO - HTTP Request: POST http://testserver/retrain "HTTP/1.1 404 Not Found"
+2024-10-23 12:41:29,814 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:41:29,814 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:41:29,815 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:41:29,815 - INFO - Testing image upload route.
+2024-10-23 12:41:29,883 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:41:29,884 - INFO - HTTP Request: POST http://testserver/upload_image "HTTP/1.1 404 Not Found"
+2024-10-23 12:41:29,884 - INFO - Testing build_model function.
+2024-10-23 12:41:29,884 - INFO - Building model architecture...
+2024-10-23 12:41:29,906 - INFO - Model built successfully.
+2024-10-23 12:41:29,906 - DEBUG - Model compiled with expected parameters.
+2024-10-23 12:41:29,907 - INFO - Testing free_memory function.
+2024-10-23 12:41:29,907 - INFO - Testing create_access_token function.
+2024-10-23 12:41:29,907 - DEBUG - Access token creation test passed.
+2024-10-23 12:41:29,907 - INFO - Testing get_password_hash function.
+2024-10-23 12:41:29,907 - DEBUG - Password hashing test passed.
+2024-10-23 12:41:29,907 - INFO - Testing verify_access_token function.
+2024-10-23 12:41:29,907 - DEBUG - Access token verification test passed.
+2024-10-23 12:41:29,907 - INFO - Testing verify_password function.
+2024-10-23 12:41:29,908 - DEBUG - Password verification test passed.
+2024-10-23 12:41:29,908 - INFO - Testing evaluate_model_on_untrained_data function.
+2024-10-23 12:41:29,910 - INFO - Testing predict_classification function.
+2024-10-23 12:41:30,259 - DEBUG - Creating converter from 3 to 5
+2024-10-23 12:41:30,343 - INFO - Testing train_model_on_new_data function.
+2024-10-23 12:43:07,968 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-23 12:43:07,969 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-23 12:43:07,969 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-23 12:43:07,983 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-23 12:43:08,230 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:43:08,232 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:43:08,233 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:43:08,233 - INFO - Testing login route.
+2024-10-23 12:43:08,234 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:43:08,234 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:43:08,234 - DEBUG - Calling on_field_name with data[0:8]
+2024-10-23 12:43:08,234 - DEBUG - Calling on_field_data with data[9:18]
+2024-10-23 12:43:08,234 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:43:08,234 - DEBUG - Calling on_field_start with no data
+2024-10-23 12:43:08,234 - DEBUG - Calling on_field_name with data[19:27]
+2024-10-23 12:43:08,234 - DEBUG - Calling on_field_data with data[28:41]
+2024-10-23 12:43:08,234 - DEBUG - Calling on_field_end with no data
+2024-10-23 12:43:08,234 - DEBUG - Calling on_end with no data
+2024-10-23 12:43:08,240 - INFO - HTTP Request: POST http://testserver/login "HTTP/1.1 400 Bad Request"
+2024-10-23 12:43:08,240 - DEBUG - Response JSON: {'detail': 'Invalid credentials'}
+2024-10-23 12:43:08,241 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:43:08,241 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:43:08,242 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:43:08,242 - INFO - Testing retrain model route.
+2024-10-23 12:43:08,242 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:43:08,243 - INFO - HTTP Request: POST http://testserver/retrain "HTTP/1.1 404 Not Found"
+2024-10-23 12:43:08,243 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 12:43:08,243 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:43:08,244 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 12:43:08,244 - INFO - Testing image upload route.
+2024-10-23 12:43:08,312 - DEBUG - Using selector: KqueueSelector
+2024-10-23 12:43:08,313 - INFO - HTTP Request: POST http://testserver/upload_image "HTTP/1.1 404 Not Found"
+2024-10-23 12:43:08,314 - INFO - Testing build_model function.
+2024-10-23 12:43:08,314 - INFO - Building model architecture...
+2024-10-23 12:43:08,336 - INFO - Model built successfully.
+2024-10-23 12:43:08,337 - DEBUG - Model compiled with expected parameters.
+2024-10-23 12:43:08,337 - INFO - Testing free_memory function.
+2024-10-23 12:43:08,337 - INFO - Testing create_access_token function.
+2024-10-23 12:43:08,337 - DEBUG - Access token creation test passed.
+2024-10-23 12:43:08,337 - INFO - Testing get_password_hash function.
+2024-10-23 12:43:08,337 - DEBUG - Password hashing test passed.
+2024-10-23 12:43:08,338 - INFO - Testing verify_access_token function.
+2024-10-23 12:43:08,338 - DEBUG - Access token verification test passed.
+2024-10-23 12:43:08,338 - INFO - Testing verify_password function.
+2024-10-23 12:43:08,338 - DEBUG - Password verification test passed.
+2024-10-23 12:43:08,338 - INFO - Testing evaluate_model_on_untrained_data function.
+2024-10-23 12:43:08,342 - INFO - Testing predict_classification function.
+2024-10-23 12:43:08,343 - INFO - Testing train_model_on_new_data function.
+2024-10-23 14:16:09,022 - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-10-23 14:16:09,022 - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-10-23 14:16:09,022 - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-10-23 14:16:09,053 - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2024-10-23 14:16:09,352 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 14:16:09,355 - DEBUG - Using selector: KqueueSelector
+2024-10-23 14:16:09,356 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 14:16:09,356 - INFO - Testing login route.
+2024-10-23 14:16:09,356 - DEBUG - Using selector: KqueueSelector
+2024-10-23 14:16:09,357 - DEBUG - Calling on_field_start with no data
+2024-10-23 14:16:09,357 - DEBUG - Calling on_field_name with data[0:8]
+2024-10-23 14:16:09,357 - DEBUG - Calling on_field_data with data[9:18]
+2024-10-23 14:16:09,357 - DEBUG - Calling on_field_end with no data
+2024-10-23 14:16:09,357 - DEBUG - Calling on_field_start with no data
+2024-10-23 14:16:09,357 - DEBUG - Calling on_field_name with data[19:27]
+2024-10-23 14:16:09,357 - DEBUG - Calling on_field_data with data[28:41]
+2024-10-23 14:16:09,357 - DEBUG - Calling on_field_end with no data
+2024-10-23 14:16:09,357 - DEBUG - Calling on_end with no data
+2024-10-23 14:16:09,366 - INFO - HTTP Request: POST http://testserver/login "HTTP/1.1 400 Bad Request"
+2024-10-23 14:16:09,366 - DEBUG - Response JSON: {'detail': 'Invalid credentials'}
+2024-10-23 14:16:09,367 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 14:16:09,367 - DEBUG - Using selector: KqueueSelector
+2024-10-23 14:16:09,367 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 14:16:09,367 - INFO - Testing retrain model route.
+2024-10-23 14:16:09,368 - DEBUG - Using selector: KqueueSelector
+2024-10-23 14:16:09,368 - INFO - HTTP Request: POST http://testserver/retrain "HTTP/1.1 404 Not Found"
+2024-10-23 14:16:09,368 - INFO - Setting up TestClient and adding a test user.
+2024-10-23 14:16:09,368 - DEBUG - Using selector: KqueueSelector
+2024-10-23 14:16:09,369 - INFO - HTTP Request: POST http://testserver/register "HTTP/1.1 404 Not Found"
+2024-10-23 14:16:09,369 - INFO - Testing image upload route.
+2024-10-23 14:16:09,445 - DEBUG - Using selector: KqueueSelector
+2024-10-23 14:16:09,446 - INFO - HTTP Request: POST http://testserver/upload_image "HTTP/1.1 404 Not Found"
+2024-10-23 14:16:09,446 - INFO - Testing build_model function.
+2024-10-23 14:16:09,446 - INFO - Building model architecture...
+2024-10-23 14:16:09,468 - INFO - Model built successfully.
+2024-10-23 14:16:09,469 - DEBUG - Model compiled with expected parameters.
+2024-10-23 14:16:09,469 - INFO - Testing free_memory function.
+2024-10-23 14:16:09,469 - INFO - Testing create_access_token function.
+2024-10-23 14:16:09,469 - DEBUG - Access token creation test passed.
+2024-10-23 14:16:09,469 - INFO - Testing get_password_hash function.
+2024-10-23 14:16:09,469 - DEBUG - Password hashing test passed.
+2024-10-23 14:16:09,470 - INFO - Testing verify_access_token function.
+2024-10-23 14:16:09,470 - DEBUG - Access token verification test passed.
+2024-10-23 14:16:09,470 - INFO - Testing verify_password function.
+2024-10-23 14:16:09,470 - DEBUG - Password verification test passed.
+2024-10-23 14:16:09,470 - INFO - Testing evaluate_model_on_untrained_data function.
+2024-10-23 14:16:09,474 - INFO - Testing predict_classification function.
+2024-10-23 14:16:09,828 - DEBUG - Creating converter from 3 to 5
+2024-10-23 14:16:09,911 - INFO - Testing train_model_on_new_data function.
