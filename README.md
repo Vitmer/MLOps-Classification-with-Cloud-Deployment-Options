@@ -34,6 +34,22 @@
 ├── docker-compose.yml           # Docker Compose configuration
 ├── prometheus.yml               # Prometheus configuration for monitoring
 ├── grafana.ini                  # Grafana configuration for monitoring
+├── kubernetes
+│   ├── namespace.yaml           # Namespace definition for Kubernetes
+│   ├── manifests
+│   │   ├── model
+│   │   │   ├── model-deployment.yaml      # Deployment for the model service
+│   │   │   ├── model-service.yaml         # Service for exposing the model API
+│   │   ├── database
+│   │   │   ├── database-deployment.yaml   # Deployment for the database
+│   │   │   ├── database-service.yaml      # Service for the database
+│   │   ├── monitoring
+│   │       ├── prometheus
+│   │       │   ├── prometheus-deployment.yaml  # Deployment for Prometheus
+│   │       │   ├── prometheus-configmap.yaml  # ConfigMap for Prometheus
+│   │       ├── grafana
+│   │           ├── grafana-deployment.yaml    # Deployment for Grafana
+│   │           ├── grafana-configmap.yaml     # ConfigMap for Grafana
 ```
 
 ## How to Run the Project
