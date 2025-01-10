@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: database-deployment
+  namespace: mlops-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: database
+  template:
+    metadata:
+      labels:
+        app: database
+    spec:
+      containers:
+      - name: database
+        image: your-database-image:latest  # Укажите образ из Dockerfile.data
+        volumeMounts:
+        - name: db-volume
+          mountPath: /app/data
+      volumes:
+      - name: db-volume
+        hostPath:
+          path: ./src/data  # Локальный путь данных

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: model-deployment
+  namespace: mlops-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: model
+  template:
+    metadata:
+      labels:
+        app: model
+    spec:
+      containers:
+      - name: model
+        image: your-image:latest  # Укажите образ из вашего Dockerfile
+        ports:
+        - containerPort: 8000
+        volumeMounts:
+        - name: src-volume
+          mountPath: /app/src
+      volumes:
+      - name: src-volume
+        hostPath:
+          path: ./src  # Путь к вашему коду
